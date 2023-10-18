@@ -21,4 +21,4 @@ NGINX_TAGGED="$NGINX_NAME:$TAG"
 docker image rm "$NGINX_LATEST" "$NGINX_TAGGED" 2> /dev/null
 
 # Build Nginx
-docker build -t "$NGINX_LATEST" -t "$NGINX_TAGGED" ${SCRIPT_DIR}
+docker build -t "$NGINX_LATEST" -t "$NGINX_TAGGED" ${SCRIPT_DIR}/../docker/
